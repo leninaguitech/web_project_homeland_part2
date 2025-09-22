@@ -40,3 +40,30 @@ content {
   font-size: 16px;
   line-height: 25px;
 }
+
+@media screen and (max-width: 1024px) {
+  .content {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .content__content {
+    max-width: 100%;
+    margin: 5px;
+  }
+  .content__subtitle {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .content__paragraph {
+    font-size: 24px;
+    line-height: 1.1;
+  }
+
+  .content__paragraph-text {
+    font-size: 24px;
+    line-height: 1.1;
+  }
+}

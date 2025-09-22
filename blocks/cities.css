@@ -1,0 +1,36 @@
+.cities {
+  display: grid;
+  justify-items: center;
+}
+
+.cities__images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 4fr);
+  gap: 16px;
+  max-width: 1184px;
+}
+
+.cities__image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .cities__images {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+  }
+
+  .cities__image {
+    max-width: 340px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 580px) {
+  .cities__images {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+}
