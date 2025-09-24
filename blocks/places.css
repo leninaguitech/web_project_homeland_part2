@@ -100,6 +100,7 @@
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr;
+    width: auto;
   }
 
   .places__content {
@@ -129,5 +130,11 @@
     grid-row: 5;
     font-size: 14px;
     padding: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .places__description {
+    width: auto;
   }
 }
